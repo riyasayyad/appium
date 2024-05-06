@@ -3,6 +3,8 @@ package com.CRM.Pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import config.Utility;
+
 public class HomePage {
 	//Encapsulation= data+Method
 
@@ -16,7 +18,8 @@ public class HomePage {
 	}
 	
 	//By Locator
-	private By SignIn= By. id("SignIn");
+	private By link=By.linkText("Sign In");
+	
 	
 	
 	//method
@@ -24,6 +27,7 @@ public class HomePage {
 	{
 		return driver.getCurrentUrl();
 	}
+	
 	public String getAppTitle()
 	{
 		return driver.getTitle();
@@ -32,9 +36,9 @@ public class HomePage {
 	
 	public void getSignIn()
 	{
-		
-		driver.findElement(SignIn).click();
+		Utility.capture(driver);
+		driver.findElement(link).click();
+		Utility.capture(driver);
 	}
-	
 	
 }

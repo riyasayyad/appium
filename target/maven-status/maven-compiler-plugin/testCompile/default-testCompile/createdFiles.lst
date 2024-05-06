@@ -1,0 +1,5 @@
+AutomationTestDevops\Devopstesting\AppTest.class
+com\CRM\TestCases\CustomersPageTest.class
+com\CRM\TestCases\LoginPageTest.class
+com\CRM\TestCases\BaseClass.class
+com\CRM\TestCases\HomePageTest.class
