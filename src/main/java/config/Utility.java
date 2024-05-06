@@ -21,6 +21,7 @@ public static void capture(WebDriver driver) {
 			
 			e.printStackTrace();
 		}
+	System.out.println("Screenshot completed!");
 }
 	
 }
